@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+<bean name="gasEngine" class="SpringJuly26.July18.model.GasEngine"></bean>
+<bean name="electricEngine" class="SpringJuly26.July18.model.ElectricEngine"></bean>
+<bean name="car" class="SpringJuly26.July18.model.Car">
+    <constructor-arg name="engine" ref="gasEngine"></constructor-arg>
+</bean>
+<bean name="employee" class="SpringJuly26.July18.model.Employee">
+    <property name="firstName" value="Nikhil"></property>
+    <property name="lastName" value="Pal"></property>
+    <property name="email" value="Nikhil@gmail.com"></property>
+    <property name="hobbies" >
+        <list>
+            <value>football</value>
+            <value>drawing</value>
+        </list>
+    </property>
+</bean>
+</beans>
