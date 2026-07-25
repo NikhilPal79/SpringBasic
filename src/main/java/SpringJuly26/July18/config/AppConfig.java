@@ -4,7 +4,7 @@ import SpringJuly26.July18.model.*;
 import lombok.Value;
 import lombok.val;
 import org.springframework.context.annotation.Bean;
-@
+
 public class AppConfig {
     @Bean
     public Engine engine() {
@@ -34,10 +34,10 @@ public class AppConfig {
         return  new Car(electricEngine());
     }
 
-    @Bean
+    /*@Bean
     public Employee employee(){
         @Value  String firstName,
         @Value String lastName,
         @Value String email){
-    }
+    }*/
 }
