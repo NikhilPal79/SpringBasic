@@ -4,7 +4,10 @@ import SpringJuly26.July18.model.*;
 import lombok.Value;
 import lombok.val;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
+
+@Configuration
 public class AppConfig {
     @Bean
     public Engine engine() {
