@@ -8,6 +8,6 @@ public class GasEngine implements Engine {
 
     @Override
     public double getHorsePower() {
-        return 20000;
+        return 2000;
     }
 }

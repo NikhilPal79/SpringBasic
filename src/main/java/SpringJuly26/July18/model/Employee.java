@@ -11,6 +11,4 @@ public class Employee {
     private String email;
     private List<String> hobbies;
 
-
-
 }
